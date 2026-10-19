@@ -1,5 +1,7 @@
 # tvhome
 
+**New to this? Start with the [plain-English setup guide](GUIDE.md).**
+
 A small home screen for an Android TV, plus scripts to debloat the TV safely over ADB.
 Written from scratch for private use. It shares no code with any third-party repo.
 
@@ -55,13 +57,15 @@ scripts refuse to run without it.
 
 ### Building a debloat list
 
-There is no shipped list on purpose: every TV model differs, and a wrong guess can break inputs
+The lists in `lists/` are the author's examples; every TV model differs, and a wrong guess can break inputs
 or HDMI-CEC. After `tv-backup.sh`, open `backup/latest/packages-all.txt`, decide what to cut, and
 put one package name per line in `lists/mine.txt`. Comments with `#` are fine. Use
 `DRY_RUN=1 tools/tv-disable.sh lists/mine.txt` to preview. Disable a few at a time, use the TV
 for a day, then do more.
 
 ### Customising the launcher
+
+Wallpapers: put pictures in a `wallpapers/` folder two levels above `launcher/` (or set `WALLPAPER_DIR`).
 
 Edit `launcher/src/com/frank/tvhome/Config.java` (columns, pinned apps, hidden apps) and rebuild.
 Long-press a tile to open that app's system page, where you can disable or uninstall it.
@@ -78,6 +82,6 @@ Long-press a tile to open that app's system page, where you can disable or unins
 | Where | Contents |
 |---|---|
 | `launcher/src/com/frank/tvhome/` | The launcher: `HomeActivity`, `AppEntry`, `AppAdapter`, `Config` |
-| `launcher/AndroidManifest.xml` | Declares the Home activity, no permissions |
+| `launcher/AndroidManifest.xml` | Declares the Home activity and the single INTERNET permission (weather) |
 | `launcher/build.sh` | SDK-only build and sign |
 | `tools/` | `adb` scripts: probe, backup, install, disable, restore |
