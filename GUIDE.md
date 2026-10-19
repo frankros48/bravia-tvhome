@@ -61,9 +61,8 @@ likely change are near the top and have a comment above each:
 
 ## Step 5. Add your wallpapers (optional)
 
-Make a folder called `wallpapers` **next to** the project folder (the same folder that contains
-`tvhome`... or set `WALLPAPER_DIR=/path/to/your/pictures` before building) and put JPG or PNG
-pictures in it. They are shrunk automatically. Without any pictures you get a plain dark background.
+Make a folder called `wallpapers` right **beside** the unzipped project folder (not inside it),
+or set `WALLPAPER_DIR=/path/to/your/pictures` before building, and put JPG or PNG pictures in it. They are shrunk automatically. Without any pictures you get a plain dark background.
 
 ## Step 6. Build and install
 
