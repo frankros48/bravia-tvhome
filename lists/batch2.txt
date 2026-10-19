@@ -1,0 +1,10 @@
+# Sony demo, promo, hotel and tracking pieces
+com.sony.dtv.promos
+com.sony.dtv.demomode
+com.sony.dtv.demosupport
+com.sony.dtv.multiscreendemo
+com.sony.dtv.b2b.hotelmode
+com.sony.dtv.b2b.rs232csupport
+com.sony.dtv.sonyselect
+com.qterics.da.product
+tv.samba.ssm

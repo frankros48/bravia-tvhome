@@ -1,0 +1,22 @@
+# Safe group: apps you did not choose, demo/promo/tracking pieces, unused legacy apps.
+# Preview first: DRY_RUN=1 TV_HOST=192.168.1.50 tools/tv-disable.sh lists/mine.txt
+
+# Pre-installed streaming and media apps you don't use
+com.weathergroup.localnow
+com.tuckercarlson.tv
+com.fng.foxnation
+com.foxnews.android
+com.espn.score_center
+com.crackle.androidtv
+com.facebook.katana
+com.hbo.go
+com.hbo.hbonow
+com.dowjones.wsj.androidtv
+air.com.vudu.air.DownloaderTablet
+com.google.android.music
+com.google.android.youtube.tvmusic
+com.google.android.play.games
+
+# Casting/mirroring receivers (run in the background)
+com.ionitech.airscreen
+com.boost.airplay.receiver

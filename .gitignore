@@ -1,0 +1,4 @@
+launcher/build/
+launcher/.signing/
+backup/
+.DS_Store
